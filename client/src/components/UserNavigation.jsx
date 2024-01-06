@@ -37,7 +37,7 @@ const UserNavigation = () => {
 
         <span className="absolute border border-grey -translate-x-[1px] w-[101%]">
           <button
-            className="text-left pl-8 py-4 hover:bg-grey w-full"
+            className="text-left pl-8 py-4 bg-white hover:bg-grey w-full"
             onClick={handleSignout}
           >
             <h1 className="font-bold text-xl mb-1">Sign Out</h1>

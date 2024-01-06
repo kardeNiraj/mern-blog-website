@@ -1,6 +1,48 @@
-POST http://localhost:3000/signup
+# access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OGYzNDVkYWZjZjVjYTI4ZDZmMGJkNCIsImlhdCI6MTcwMzg4Mzg2OX0.GsawDBgxe_lr3eRBPI4ynsjOtk8iVYiIANUhCDgReW0
+
+# POST http://localhost:3000/signup
+# Content-Type: application/json
+
+# {
+#     "fullname": "doe bhau",
+#     "email": "doe.bhau@gmail.com",
+#     "password": "Doe1234"
+# }
+
+# POST http://localhost:3000/create-blog
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OGYzNDVkYWZjZjVjYTI4ZDZmMGJkNCIsImlhdCI6MTcwMzg4Mzg2OX0.GsawDBgxe_lr3eRBPI4ynsjOtk8iVYiIANUhCDgReW0
+
+# {
+#     "title": "Test Blog",
+#     "banner": "http://example.com/image",
+#     "content": [1,2,3,4,5],
+#     "tags": ["tag1", "tag2", "tag3", "tag4"],
+#     "desc": "this is a test blog with a descriptino"
+# }
+
+# GET http://localhost:3001/trending-blogs
+
+# request for filtering blogs with category
+# POST http://localhost:3001/search-blogs
+# Content-Type: application/json
+
+# {
+#     "tag": "interview"
+# }
+
+# request to search for a user
+# POST http://localhost:3001/get-profile
+# Content-Type: application/json
+
+# {
+#     "username": "nirajkarde01"
+# }
+
+# request to search for a blog
+POST http://localhost:3001/get-blog
 Content-Type: application/json
 
 {
-    "fullname": "John Doe"
+    "blog_id": "Content-Type-Arrays-Mapping-the-Path-to-Maximum-ImpactfcPFE1I7dkg--jZFXEeYP"
 }
